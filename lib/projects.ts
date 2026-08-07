@@ -51,18 +51,18 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     id: "project-satu",
-    title: "E-Commerce Dashboard",
-    category: "Full-Stack App",
+    title: "Content Management System FOR MARTABAK LUMER TELUR",
+    category: "Full-Stack web application",
     description:
-      "Dashboard admin untuk mengelola produk, pesanan, dan statistik penjualan secara real-time.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
-    tech: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS"],
+      "The Martabak Lumer Telur CMS is a web-based content management system that simplifies menu management, inventory tracking, and customer order processing. Developed as an academic project during my second semester at university.",
+    image: "/images/martabak_foto/profil-martabak.jpg",
+    tech: ["PHP", "LARAVEL", "PYTHON", "Tailwind CSS"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/project-satu",
-    longDescription: [
-      "E-Commerce Dashboard adalah panel admin yang dibangun untuk membantu tim operasional mengelola katalog produk, memantau pesanan masuk, dan menganalisis performa penjualan tanpa harus menyentuh database secara langsung.",
-      "Seluruh data disajikan secara real-time melalui kombinasi Next.js App Router dan Prisma sebagai ORM, dengan lapisan UI yang dirancang agar tetap ringan meski menampilkan ribuan baris data transaksi.",
+    githubUrl: "https://github.com/achen023/martabak-lumer-telur.git",
+    longDescription: [ 
+      "The Martabak Lumer Telur CMS is an administrative web application designed to simplify the management of menus, raw material inventory, and customer orders efficiently.",
+      "This project was developed as an academic project during my second semester at university, with the objective of applying fundamental software engineering concepts and building practical experience in full-stack web development.",
+      "The system is built using PHP with the Laravel MVC architecture, while Prisma is utilized as the ORM for efficient database management. All data is processed and displayed in real time through an intuitive and lightweight user interface, ensuring smooth performance even when handling thousands of transaction records."
     ],
     goals: [
       "Mempercepat proses pengelolaan produk dan stok oleh tim non-teknis.",
@@ -72,14 +72,14 @@ export const PROJECTS: Project[] = [
     info: {
       role: "Full-Stack Developer",
       duration: "6 minggu",
-      team: "Solo project",
+      team: "Team project",
       year: "2024",
     },
     gallery: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+      "/images/martabak_foto/journy.jpg",
+      "/images/martabak_foto/map-martabak.jpg",
+      "/images/martabak_foto/like-martabak.jpg",
+      "/images/martabak_foto/martabak.jpg",
     ],
     features: [
       {
@@ -88,9 +88,9 @@ export const PROJECTS: Project[] = [
           "CRUD produk lengkap dengan varian, kategori, dan pengelolaan stok otomatis.",
       },
       {
-        title: "Statistik Real-Time",
+        title: "story journey",
         description:
-          "Grafik pendapatan dan tren pesanan yang diperbarui secara langsung tanpa reload.",
+          "we make story journey of this project to make it more interesting and easy to understand",
       },
       {
         title: "Manajemen Pesanan",
@@ -98,9 +98,9 @@ export const PROJECTS: Project[] = [
           "Pelacakan status pesanan dari pending hingga selesai dengan notifikasi otomatis.",
       },
       {
-        title: "Role-Based Access",
+        title: "Location and Payment Gateway Integration",
         description:
-          "Hak akses berbeda untuk admin, staf gudang, dan staf penjualan.",
+          "user dapat menemukan lokasi martabak lumer telur dan melakukan pembayaran secara online melalui gateway yang terintegrasi.",
       },
     ],
     timeline: [
@@ -154,18 +154,18 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "project-dua",
-    title: "Task Management App",
+    title: "Ecopower Monitoring Based on IoT For Vehicle Transportation",
     category: "Web Application",
     description:
-      "Aplikasi manajemen tugas dengan fitur drag-and-drop, kolaborasi tim, dan notifikasi real-time.",
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=800&auto=format&fit=crop",
+      "EcoPower Monitoring is an IoT-based solar power (PLTS) monitoring system for vehicle transportation. Developed during my second semester in Informatics Engineering, the project provides real-time monitoring of solar energy generation, battery status, and power consumption through a web dashboard.",
+    image: "/images/plts_foto/profil-plts.jpg",
     tech: ["React", "Node.js", "MongoDB"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/username/project-dua",
     longDescription: [
-      "Task Management App dirancang untuk tim kecil hingga menengah yang membutuhkan cara sederhana namun kuat untuk mengatur alur kerja mereka lewat papan Kanban.",
-      "Fitur kolaborasi real-time memungkinkan setiap anggota tim melihat perubahan status tugas secara langsung, sehingga mengurangi miskomunikasi antar anggota tim yang bekerja jarak jauh.",
+      "EcoPower Monitoring is an Internet of Things (IoT)-based monitoring system designed to track the performance of a solar power (PLTS) system used for vehicle transportation. The project was developed during my second semester in the Informatics Engineering program as part of an academic project to apply IoT concepts to renewable energy monitoring.",
+      "The system collects real-time data from solar panels, batteries, and electrical components using IoT devices, then displays the information on a web-based dashboard. Users can monitor energy production, battery condition, and power consumption while viewing historical data to analyze system performance.",
+      "Through this project, I gained practical experience in IoT integration, sensor data collection, web application development, database management, and real-time data visualization, while learning how technology can improve the efficiency and reliability of renewable energy systems.",
     ],
     goals: [
       "Menyederhanakan koordinasi tugas tim tanpa alat tambahan yang rumit.",
@@ -179,10 +179,11 @@ export const PROJECTS: Project[] = [
       year: "2024",
     },
     gallery: [
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop",
+      "/images/plts_foto/plts_login.jpg",
+      "/images/plts_foto/plts_dashboard.jpg",
+      "/images/plts_foto/plts_report.jpg",
+      "/images/plts_foto/plts_alert.jpg",
+      "/images/plts_foto/plts_setting.jpg"
     ],
     features: [
       {
