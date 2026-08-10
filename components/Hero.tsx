@@ -47,10 +47,8 @@ export default function Hero() {
           className="mt-6 max-w-xl text-ink-300 leading-relaxed animate-fade-up"
           style={{ animationDelay: "200ms" }}
         >
-          Saya membangun aplikasi web yang cepat, rapi, dan mudah digunakan —
-          dari perancangan antarmuka hingga logika di balik layar. Fokus saya
-          adalah menghadirkan produk digital yang solid secara teknis dan
-          menyenangkan untuk dipakai.
+          i build web applications and websites with a focus on clean code, performance, and user experience. I enjoy solving complex problems and turning ideas into reality through code.
+          and I am always looking for new challenges and opportunities to grow as a developer.
         </p>
 
         {/* Call to action buttons */}
@@ -62,7 +60,7 @@ export default function Hero() {
             href="#project"
             className="group inline-flex items-center justify-center gap-2 rounded-lg bg-accent-500 px-6 py-3 text-sm font-semibold text-white hover:bg-accent-600 transition-all shadow-lg shadow-accent-500/20"
           >
-            Lihat Proyek
+            view my work
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
@@ -70,7 +68,7 @@ export default function Hero() {
             className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 px-6 py-3 text-sm font-semibold text-ink-100 hover:border-accent-400/60 hover:text-accent-400 transition-colors"
           >
             <Mail className="h-4 w-4" />
-            Hubungi Saya
+            call me
           </a>
         </div>
       </div>

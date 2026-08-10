@@ -11,7 +11,7 @@ export default function ProjectOverview({ project }: { project: Project }) {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <p className="code-label mb-3">// 02.2 About</p>
         <h2 className="font-display font-bold text-3xl sm:text-4xl text-ink-100 mb-12">
-          Tentang Proyek Ini
+          About This Project
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">

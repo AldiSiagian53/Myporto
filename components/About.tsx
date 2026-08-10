@@ -34,7 +34,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <p className="code-label mb-3">// 03. About Me</p>
         <h2 className="font-display font-bold text-3xl sm:text-4xl text-ink-100 mb-12">
-          Tentang Saya
+          About Me
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
@@ -57,16 +57,10 @@ export default function About() {
           {/* Bio + tech stack */}
           <div className="lg:col-span-3">
             <p className="text-ink-300 leading-relaxed">
-              Saya seorang developer dengan minat besar pada pembangunan
-              produk web dari ujung ke ujung — mulai dari merancang
-              antarmuka yang intuitif, menyusun arsitektur backend yang
-              stabil, hingga memastikan performa aplikasi tetap optimal.
-              Saya percaya kode yang baik adalah kode yang mudah dibaca,
-              diuji, dan dikembangkan oleh tim di masa depan.
+              I'm a developer with a big interest in building web products end to end — from designing intuitive interfaces, setting up solid backend architecture, to making sure the app's performance stays optimal. I believe good code is code that's easy to read, test, and grow by future teams.
             </p>
             <p className="mt-4 text-ink-300 leading-relaxed">
-              Di luar coding, saya senang mengeksplorasi tren desain UI/UX
-              terbaru dan berkontribusi pada proyek open-source.
+              Outside of coding, I enjoy exploring the latest UI/UX design trends and contributing to open-source projects.
             </p>
 
             <div className="mt-8">

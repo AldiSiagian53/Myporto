@@ -13,11 +13,11 @@ export default function ProjectCTA() {
           <div className="relative">
             <p className="code-label mb-3">// 03. Contact</p>
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-ink-100">
-              Tertarik Berkolaborasi?
+              Interested in Collaborating?
             </h2>
             <p className="mt-3 max-w-xl mx-auto text-ink-300">
-              Punya proyek serupa atau ide yang ingin diwujudkan? Mari
-              diskusikan bagaimana saya bisa membantu.
+              Have a similar project or an idea you want to bring to life? Let's
+              discuss how I can help.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -26,14 +26,14 @@ export default function ProjectCTA() {
                 className="group inline-flex items-center justify-center gap-2 rounded-lg bg-accent-500 px-6 py-3 text-sm font-semibold text-white hover:bg-accent-600 transition-all shadow-lg shadow-accent-500/20"
               >
                 <Mail className="h-4 w-4" />
-                Hubungi Saya
+                Contact Me
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/#project"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 px-6 py-3 text-sm font-semibold text-ink-100 hover:border-accent-400/60 hover:text-accent-400 transition-colors"
               >
-                Lihat Proyek Lain
+                View Other Projects
               </Link>
             </div>
           </div>

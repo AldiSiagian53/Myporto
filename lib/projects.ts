@@ -50,7 +50,7 @@ export type Project = {
 // Replace image URLs with your own thumbnails in /public/images later
 export const PROJECTS: Project[] = [
   {
-    id: "project-satu",
+    id: "project-one",
     title: "Content Management System FOR MARTABAK LUMER TELUR",
     category: "Full-Stack web application",
     description:
@@ -65,13 +65,13 @@ export const PROJECTS: Project[] = [
       "The system is built using PHP with the Laravel MVC architecture, while Prisma is utilized as the ORM for efficient database management. All data is processed and displayed in real time through an intuitive and lightweight user interface, ensuring smooth performance even when handling thousands of transaction records."
     ],
     goals: [
-      "Mempercepat proses pengelolaan produk dan stok oleh tim non-teknis.",
-      "Menyediakan visualisasi penjualan yang mudah dibaca dalam satu tampilan.",
-      "Mengurangi kesalahan input pesanan lewat validasi otomatis.",
+      "To create a user-friendly CMS that allows restaurant staff to manage menus, inventory, and orders efficiently.",
+      "To implement real-time data processing and display for better operational decision-making.",
+      "To gain practical experience in full-stack web development using PHP, Laravel, and Prisma.",
     ],
     info: {
       role: "Full-Stack Developer",
-      duration: "6 minggu",
+      duration: "6 weeks",
       team: "Team project",
       year: "2024",
     },
@@ -83,9 +83,9 @@ export const PROJECTS: Project[] = [
     ],
     features: [
       {
-        title: "Manajemen Produk",
+        title: "product-management",
         description:
-          "CRUD produk lengkap dengan varian, kategori, dan pengelolaan stok otomatis.",
+          "Complete product CRUD with variants, categories, and automatic inventory management.",
       },
       {
         title: "story journey",
@@ -93,90 +93,90 @@ export const PROJECTS: Project[] = [
           "we make story journey of this project to make it more interesting and easy to understand",
       },
       {
-        title: "Manajemen Pesanan",
+        title: "booking-order-management",
         description:
-          "Pelacakan status pesanan dari pending hingga selesai dengan notifikasi otomatis.",
+        "The system allows users to place orders online, and the restaurant staff can manage and track these orders efficiently through the CMS.",
       },
       {
-        title: "Location and Payment Gateway Integration",
+        title: "Location finder",
         description:
-          "user dapat menemukan lokasi martabak lumer telur dan melakukan pembayaran secara online melalui gateway yang terintegrasi.",
+          "Users can find the locations of Martabak Lumer Telur branches on the map with integrated Google Maps API.",
       },
     ],
     timeline: [
       {
-        phase: "Riset & Perencanaan",
-        period: "Minggu 1",
+        phase: "planning",
+        period: "week 1",
         description:
-          "Menyusun kebutuhan fitur bersama calon pengguna dan merancang skema database.",
+        "Conduct research and gather requirements for the CMS, including identifying key features and functionalities needed for menu management, inventory tracking, and order processing.",
       },
       {
         phase: "Desain UI/UX",
-        period: "Minggu 2",
-        description: "Membuat wireframe dan prototipe alur kerja admin di Figma.",
+        period: "week 2",
+        description: "make a design for the user interface and user experience of the CMS, including wireframes and mockups.",
       },
       {
-        phase: "Pengembangan Inti",
-        period: "Minggu 3–4",
+        phase: "Backend Development",
+        period: "week 3–4",
         description:
-          "Implementasi backend Prisma, autentikasi, dan modul produk/pesanan.",
+        "build the backend of the CMS using PHP and Laravel, implementing database models, controllers, and API endpoints for product and order management.",
       },
       {
-        phase: "Pengujian & Optimasi",
-        period: "Minggu 5",
-        description: "Pengujian performa query dan perbaikan bug lintas perangkat.",
+        phase: "testing & QA",
+        period: "week 5",
+        description: "Conduct thorough testing of the CMS, including unit tests, integration tests, and user acceptance testing to ensure all features work as intended.",
       },
       {
-        phase: "Peluncuran",
-        period: "Minggu 6",
-        description: "Deploy ke production dan dokumentasi penggunaan.",
+        phase: "launching & Documentation",
+        period: "week 6",
+        description: "deploy the CMS to a production environment and create comprehensive documentation for future maintenance and user guidance.",
       },
     ],
     challenges: [
       {
         challenge:
-          "Query statistik penjualan menjadi lambat saat data transaksi bertambah banyak.",
+          "Query statistics and reports on large datasets causing slow response times.",
         solution:
-          "Menerapkan agregasi di level database dan caching hasil query dengan revalidasi berkala.",
+        "Implementing database indexing and optimizing queries to improve performance, along with caching frequently accessed data to reduce load times.",
       },
       {
         challenge:
-          "Sinkronisasi status pesanan antar tab admin yang dibuka bersamaan.",
+        "Maintaining a consistent user experience across different devices and screen sizes.",
         solution:
-          "Menggunakan polling ringan dan optimistic update untuk menjaga konsistensi tampilan.",
+        "Using responsive design principles and thorough testing on various devices to ensure the CMS interface is user-friendly and accessible on desktops, tablets, and smartphones.",
       },
     ],
     results: [
-      { label: "Waktu Proses Pesanan", value: "-40%" },
-      { label: "Kesalahan Input Manual", value: "-65%" },
-      { label: "Kepuasan Tim Operasional", value: "4.8/5" },
+      { label: "time processing order", value: "-40%" },
+      { label: "time reducing manual input errors", value: "-65%" },
+      { label: "user satisfaction", value: "4.8/5" },
     ],
   },
   {
-    id: "project-dua",
+    id: "project-two",
     title: "Ecopower Monitoring Based on IoT For Vehicle Transportation",
     category: "Web Application",
     description:
       "EcoPower Monitoring is an IoT-based solar power (PLTS) monitoring system for vehicle transportation. Developed during my second semester in Informatics Engineering, the project provides real-time monitoring of solar energy generation, battery status, and power consumption through a web dashboard.",
     image: "/images/plts_foto/profil-plts.jpg",
-    tech: ["React", "Node.js", "MongoDB"],
+    tech: ["vite", "Python", "C++", "IoT", "grafana", "SQLite", "docker", "tailwindcss", "chart.js", "esp32", "transmiter", "receiver", "php", "laravel"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/project-dua",
+    githubUrl: "https://github.com/AldiSiagian53/Monitoring-PLTS-Based-on-IOT-For-Vehicle-Trasnportation.git",
     longDescription: [
       "EcoPower Monitoring is an Internet of Things (IoT)-based monitoring system designed to track the performance of a solar power (PLTS) system used for vehicle transportation. The project was developed during my second semester in the Informatics Engineering program as part of an academic project to apply IoT concepts to renewable energy monitoring.",
       "The system collects real-time data from solar panels, batteries, and electrical components using IoT devices, then displays the information on a web-based dashboard. Users can monitor energy production, battery condition, and power consumption while viewing historical data to analyze system performance.",
       "Through this project, I gained practical experience in IoT integration, sensor data collection, web application development, database management, and real-time data visualization, while learning how technology can improve the efficiency and reliability of renewable energy systems.",
     ],
     goals: [
-      "Menyederhanakan koordinasi tugas tim tanpa alat tambahan yang rumit.",
-      "Memberikan visibilitas progres proyek secara instan bagi semua anggota.",
-      "Mendukung kolaborasi jarak jauh dengan notifikasi yang relevan.",
+      "real time monitoring of solar energy generation and battery status for vehicle transportation.",
+      "Providing a user-friendly web dashboard for data visualization and analysis.",
+      "Implementing IoT devices to collect and transmit data from the solar power system.",
     ],
     info: {
-      role: "Frontend & Backend Developer",
-      duration: "5 minggu",
+      role: "Backend & IoT Developer",
+      duration: "5 weeks",
       team: "2 developer",
-      year: "2024",
+      year: "2025",
     },
     gallery: [
       "/images/plts_foto/plts_login.jpg",
@@ -187,84 +187,85 @@ export const PROJECTS: Project[] = [
     ],
     features: [
       {
-        title: "Papan Kanban Drag-and-Drop",
+        title: "Monitoring Real-Time",
         description:
-          "Pindahkan tugas antar kolom status dengan interaksi drag-and-drop yang halus.",
+          "shows live data of solar energy generation, battery status, and power consumption on the dashboard.",
       },
       {
-        title: "Kolaborasi Tim",
-        description: "Komentar, mention, dan lampiran file pada setiap kartu tugas.",
+        title: "alert & Notification System",
+        description: "Provides instant alerts for abnormal conditions such as low battery or system faults, ensuring timely intervention.",
       },
       {
-        title: "Notifikasi Real-Time",
+        title: "chart & Data Visualization",
         description:
-          "Pembaruan langsung saat tugas ditugaskan, diubah, atau mendekati tenggat waktu.",
+          "Displays historical data in interactive charts for easy analysis of energy trends and system performance.",
       },
       {
-        title: "Filter & Pencarian",
+        title: "login & User Management",
         description:
-          "Menyaring tugas berdasarkan penanggung jawab, label, atau prioritas.",
+          "Secure login system with role-based access control, allowing different levels of access for administrators and users.",
       },
     ],
     timeline: [
       {
-        phase: "Perencanaan Fitur",
-        period: "Minggu 1",
-        description: "Menentukan MVP dan alur kolaborasi tim.",
+        phase: "planning  Fitures & Requirements",
+        period: "week 1",
+        description: "make a list of features and requirements for the IoT monitoring system, including data collection, dashboard design, and alert mechanisms.",
       },
       {
-        phase: "Pengembangan Backend",
-        period: "Minggu 2",
-        description: "Membangun API Node.js dan skema data MongoDB.",
+        phase: "develop Backend",
+        period: "week 2",
+        description: "build erd and database schema, implement API endpoints for data collection and retrieval, and set up user authentication and authorization.",
       },
       {
-        phase: "Pengembangan Frontend",
-        period: "Minggu 3",
-        description: "Implementasi papan Kanban dan interaksi drag-and-drop.",
+        phase: "develop Frontend",
+        period: "week 3",
+        description: "design and implement the web dashboard interface, including real-time data display, charts, and user management features.",
       },
       {
-        phase: "Integrasi Real-Time",
-        period: "Minggu 4",
-        description: "Menghubungkan notifikasi dan sinkronisasi antar client.",
+        phase: "develop IoT Device Integration",
+        period: "week 4",
+        description: "Integrate IoT devices with the backend system, ensuring accurate data collection and transmission to the web dashboard.",
       },
       {
         phase: "QA & Rilis",
-        period: "Minggu 5",
-        description: "Pengujian menyeluruh dan rilis versi awal.",
+        period: "week 5",
+        description: "Conduct thorough testing of the entire system, including backend, frontend, and IoT device integration, and deploy the application to production.",
       },
     ],
     challenges: [
       {
-        challenge: "Drag-and-drop terasa patah-patah pada daftar tugas yang panjang.",
+        challenge: "data real time sometimes delayed due to network instability.",
         solution:
-          "Mengoptimalkan re-render dengan virtualisasi list dan memoization komponen kartu.",
+          "Implementing a more stable WebSocket connection with automatic reconnection to ensure timely data delivery to the client.",
       },
       {
-        challenge: "Notifikasi real-time terkadang terlambat sampai ke client.",
+        challenge: "Ensuring data integrity and consistency when multiple users access the dashboard simultaneously.",
         solution:
-          "Mengganti polling dengan koneksi WebSocket yang lebih stabil dan reconnect otomatis.",
+          "Implementing proper database transactions and locking mechanisms to prevent data conflicts and ensure accurate real-time updates across all users.",
       },
     ],
     results: [
-      { label: "Waktu Koordinasi Tim", value: "-30%" },
-      { label: "Tugas Terlambat", value: "-25%" },
-      { label: "Adopsi Tim Internal", value: "12 tim" },
+      { label: "Team Coordination time", value: "-30%" },
+      { label: "Late Tasks", value: "-25%" },
+      { label: "adoption team rate", value: "12 tim" },
     ],
   },
   {
-    id: "project-tiga",
-    title: "Portfolio Landing Page",
-    category: "Frontend / UI",
+    id: "project-three",
+    title: "DEVELOPMENT OF AN INTEGRATED MONITORING SYSTEM AT THE TESTING BAY",
+    category: "Web Application",
     description:
-      "Landing page interaktif dengan animasi scroll dan desain responsif untuk klien freelance.",
-    image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop",
-    tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
+    "An integrated industrial monitoring web application developed for SPM Oil & Gas, a Caterpillar company, to monitor and manage Testing Bay operations in real-time through PLC, sensor, and computer vision integration.",
+    image: "/images/spm_foto/spm-profil.jpg",
+    tech: ["php", "python", "laravel", "bootstrap", "opencv", "computer vision", "plc", "modbus-TCP", "sqlserver", "docker", "grafana", "yolov8", "flask", "vuejs", "ultralytics", "three.js"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/project-tiga",
+    githubUrl: "https://github.com/Maksum885/Testing_bay.git",
     longDescription: [
-      "Proyek ini merupakan landing page kustom untuk seorang klien freelance yang membutuhkan kehadiran digital yang kuat, dengan penekanan pada animasi scroll yang halus dan performa loading yang cepat.",
-      "Setiap section dirancang modular sehingga klien dapat dengan mudah menambah atau mengubah konten tanpa mengubah struktur inti halaman.",
+      "The Development of an Integrated Monitoring System at the Testing Bay is an industrial web application developed to support operational monitoring at SPM Oil & Gas, a Caterpillar company. The system was designed to centralize Testing Bay monitoring and provide operators with real-time visibility into critical testing conditions and equipment status.",
+      "The application integrates PLC communication via Modbus TCP, sensors, and computer vision technology to collect and display operational data through a centralized monitoring dashboard. Key features include pressure monitoring, alarm alerts, panel mode status, roof open/closed monitoring, door lock status, and human detection using computer vision.",
+      "The application integrates PLC communication via Modbus TCP, sensors, and computer vision technology to collect and display operational data through a centralized monitoring dashboard. Key features include pressure monitoring, alarm alerts, panel mode status, roof open/closed monitoring, door lock status, and human detection using computer vision.",
+      "The project aims to improve operational visibility, monitoring efficiency, and workplace safety by reducing reliance on manual observation and providing centralized, real-time information for Testing Bay operations.",
     ],
     goals: [
       "Menghadirkan kesan profesional sejak detik pertama halaman dimuat.",
@@ -272,10 +273,10 @@ export const PROJECTS: Project[] = [
       "Membuat struktur konten yang mudah diperbarui oleh klien.",
     ],
     info: {
-      role: "Frontend Developer",
-      duration: "3 minggu",
-      team: "Solo project",
-      year: "2023",
+      role: "Computer Vision Developer",
+      duration: "3 weeks",
+      team: "two developers",
+      year: "2026",
     },
     gallery: [
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
