@@ -45,7 +45,7 @@ export default function About() {
               <div className="relative h-full w-full rounded-3xl border border-white/10 overflow-hidden">
                 <Image
                   src="/images/profile.jpg"
-                  alt="Foto profil"
+                  alt="Profile picture of the developer"
                   fill
                   sizes="288px"
                   className="object-cover"

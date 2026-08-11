@@ -42,7 +42,7 @@ export default function Header() {
           >
             <TerminalSquare className="h-5 w-5 text-accent-400" strokeWidth={1.75} />
             <span>
-              ~/nama<span className="text-accent-400">.dev</span>
+              ~/Aldi<span className="text-accent-400">.dev</span>
             </span>
           </a>
 

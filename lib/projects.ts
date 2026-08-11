@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "project-two",
-    title: "Ecopower Monitoring Based on IoT For Vehicle Transportation",
+    title: "Ecopower Monitoring Surya Panel Based on IoT For Vehicle Transportation",
     category: "Web Application",
     description:
       "EcoPower Monitoring is an IoT-based solar power (PLTS) monitoring system for vehicle transportation. Developed during my second semester in Informatics Engineering, the project provides real-time monitoring of solar energy generation, battery status, and power consumption through a web dashboard.",

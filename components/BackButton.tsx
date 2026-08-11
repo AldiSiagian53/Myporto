@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 
 export default function BackButton({
   href = "/#project",
-  label = "Kembali ke Proyek",
+  label = "back to projects",
 }: {
   href?: string;
   label?: string;

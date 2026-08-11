@@ -50,11 +50,10 @@ export default function Contact() {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <p className="code-label mb-3">// 04. Contact</p>
         <h2 className="font-display font-bold text-3xl sm:text-4xl text-ink-100">
-          Mari Terhubung
+          contact me
         </h2>
         <p className="mt-3 max-w-xl text-ink-300">
-          Punya proyek, peluang kerja, atau sekadar ingin berdiskusi? Kirim
-          pesan atau hubungi saya langsung lewat kanal berikut.
+          Have a project, job opportunity, or just want to chat? Send me a message or reach out directly through the channels below.
         </p>
 
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -91,7 +90,7 @@ export default function Contact() {
                 htmlFor="name"
                 className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-ink-500"
               >
-                Nama
+                Name
               </label>
               <input
                 id="name"
@@ -129,7 +128,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-ink-500"
               >
-                Pesan
+                massage
               </label>
               <textarea
                 id="message"
@@ -151,14 +150,14 @@ export default function Contact() {
               {status === "sent" ? (
                 <>
                   <CheckCircle2 className="h-4 w-4" />
-                  Terkirim!
+                  Sent!
                 </>
               ) : status === "sending" ? (
-                "Mengirim..."
+                "Sending..."
               ) : (
                 <>
                   <Send className="h-4 w-4" />
-                  Kirim Pesan
+                  Send Message
                 </>
               )}
             </button>
