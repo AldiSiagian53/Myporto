@@ -147,9 +147,9 @@ export const PROJECTS: Project[] = [
       },
     ],
     results: [
-      { label: "time processing order", value: "-40%" },
-      { label: "time reducing manual input errors", value: "-65%" },
-      { label: "user satisfaction", value: "4.8/5" },
+      { label: "menu category", value: "passed" },
+      { label: "online orders", value: "passed" },
+      { label: "localization support", value: "passed" },
     ],
   },
   {
@@ -159,7 +159,7 @@ export const PROJECTS: Project[] = [
     description:
       "EcoPower Monitoring is an IoT-based solar power (PLTS) monitoring system for vehicle transportation. Developed during my second semester in Informatics Engineering, the project provides real-time monitoring of solar energy generation, battery status, and power consumption through a web dashboard.",
     image: "/images/plts_foto/profil-plts.jpg",
-    tech: ["vite", "Python", "C++", "IoT", "grafana", "SQLite", "docker", "tailwindcss", "chart.js", "esp32", "transmiter", "receiver", "php", "laravel"],
+    tech: ["Python", "C++", "IoT", "grafana", "SQLite", "docker", "tailwindcss", "esp32", "php", "laravel"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/AldiSiagian53/Monitoring-PLTS-Based-on-IOT-For-Vehicle-Trasnportation.git",
     longDescription: [
@@ -175,7 +175,7 @@ export const PROJECTS: Project[] = [
     info: {
       role: "Backend & IoT Developer",
       duration: "5 weeks",
-      team: "2 developer",
+      team: "4 developer",
       year: "2025",
     },
     gallery: [
@@ -246,19 +246,19 @@ export const PROJECTS: Project[] = [
       },
     ],
     results: [
-      { label: "Team Coordination time", value: "-30%" },
-      { label: "Late Tasks", value: "-25%" },
-      { label: "adoption team rate", value: "12 tim" },
+      { label: "real time monitoring data ", value: "passed" },
+      { label: "charting capabilities", value: "passed" },
+      { label: "user dashboard monitoring", value: "passed" },
     ],
   },
   {
     id: "project-three",
-    title: "DEVELOPMENT OF AN INTEGRATED MONITORING SYSTEM AT THE TESTING BAY",
+    title: "Development of an Integrated Monitoring System at the Testing Bay",
     category: "Web Application",
     description:
     "An integrated industrial monitoring web application developed for SPM Oil & Gas, a Caterpillar company, to monitor and manage Testing Bay operations in real-time through PLC, sensor, and computer vision integration.",
     image: "/images/spm_foto/spm-profil.jpg",
-    tech: ["php", "python", "laravel", "bootstrap", "opencv", "computer vision", "plc", "modbus-TCP", "sqlserver", "docker", "grafana", "yolov8", "flask", "vuejs", "ultralytics", "three.js"],
+    tech: ["PHP", "Python", "Laravel", "Computer Vision", "PLC", "Modbus-TCP", "SQLServer", "Three.js"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Maksum885/Testing_bay.git",
     longDescription: [
@@ -268,81 +268,105 @@ export const PROJECTS: Project[] = [
       "The project aims to improve operational visibility, monitoring efficiency, and workplace safety by reducing reliance on manual observation and providing centralized, real-time information for Testing Bay operations.",
     ],
     goals: [
-      "Menghadirkan kesan profesional sejak detik pertama halaman dimuat.",
-      "Menjaga skor performa dan aksesibilitas tetap tinggi di semua perangkat.",
-      "Membuat struktur konten yang mudah diperbarui oleh klien.",
+      "Centralize Testing Bay operational monitoring into a single web-based dashboard.",
+      "Provide real-time visibility of PLC data, safety conditions, alarms, and camera monitoring.",
+      "Improve monitoring efficiency, information visibility, and operational traceability."
     ],
     info: {
       role: "Computer Vision Developer",
-      duration: "3 weeks",
+      duration: "12 weeks",
       team: "two developers",
       year: "2026",
     },
     gallery: [
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=1200&auto=format&fit=crop",
+      "/images/spm_foto/spm-login.jpg",
+      "/images/spm_foto/spm-dashboard.jpg",
+      "/images/spm_foto/spm-home.jpg",
+      "/images/spm_foto/spm-camera.jpg",
+      "/images/spm_foto/spm-log.jpg",
+      "/images/spm_foto/spm-usermanage.jpg",
+      "/images/spm_foto/spm-plc.jpg",
+      "/images/spm_foto/spm-room.jpg",
+      "/images/spm_foto/spm-password.jpg"
+
     ],
     features: [
       {
-        title: "Animasi Scroll",
+        title: "REAL TIME PLC MONITORING",
         description:
-          "Transisi masuk yang halus di setiap section menggunakan Framer Motion.",
+        "Displays operational data acquired from PLC Holding Registers through Modbus TCP, including pressure, testing status, panel mode, roof position, and safety door status."
       },
       {
-        title: "Desain Sepenuhnya Responsif",
-        description: "Tampilan optimal mulai dari layar mobile hingga desktop lebar.",
+        title: "COMPUTER VISION MONITORING",
+        description: "Integrates CCTV streaming with YOLO-based Computer Vision to detect human presence in the Testing Bay area.",
       },
       {
-        title: "Skor Performa Tinggi",
+        title: "ALARM & SAFETY MONITORING",
         description:
-          "Dioptimasi untuk skor Lighthouse 90+ pada performance dan accessibility.",
+        "Provides alerts for abnormal PLC conditions and human detection during testing operations, helping operators respond to potential safety issues."
       },
       {
-        title: "Konten Modular",
-        description: "Struktur komponen yang memudahkan klien menambah section baru.",
+        title: "EVENT LOG",
+        description: "Records PLC events, alarms, and monitoring activities to support operational history and traceability.",
+      },
+      {
+        title: "ROLE-BASED ACCESS CONTROL",
+        description: "Provides separate Administrator and Operator access with room-based monitoring permissions.",
+      },
+      {
+        title: "PLC & CAMERA CONFIGURATION",
+        description: "Allows authorized users to configure PLC communication parameters and monitoring camera connections.",
       },
     ],
     timeline: [
       {
-        phase: "Diskusi Kebutuhan Klien",
-        period: "Minggu 1",
-        description: "Mengumpulkan referensi desain dan konten dari klien.",
+        phase: "PLAN",
+        period: "week 1-2",
+        description: "Requirement analysis & Testing Bay observation",
       },
       {
-        phase: "Desain & Prototipe",
-        period: "Minggu 1–2",
-        description: "Menyusun wireframe dan gaya visual di Figma.",
+        phase: "DESIGN",
+        period: "week 3–5",
+        description: "System architecture, database, UML, UI and communication flow",
       },
       {
-        phase: "Pengembangan",
-        period: "Minggu 2",
-        description: "Implementasi section dan animasi scroll.",
+        phase: "DEVELOPMENT",
+        period: "week 6–9",
+        description: "Laravel application, PLC integration, camera monitoring and Computer Vision",
       },
       {
-        phase: "Revisi & Peluncuran",
-        period: "Minggu 3",
-        description: "Revisi berdasarkan feedback klien dan deploy ke production.",
+        phase: "TEST",
+        period: "week 10",
+        description: "Functional, Performance, UAT and Usability Testing",
+      },
+      {
+        phase: "DEPLOY",
+        period: "week 11",
+        description: "System deployment and environment configuration",
+      },
+      {
+        phase: "REVIEW",
+        period: "week 12",
+        description: "Evaluation and refinement based on user feedback",
       },
     ],
     challenges: [
       {
         challenge:
-          "Animasi scroll berat memengaruhi skor performa di perangkat low-end.",
+          "Integrating real-time PLC operational data into a web-based monitoring system.",
         solution:
-          "Menggunakan animasi berbasis transform/opacity saja dan lazy-load section di luar viewport.",
+        "Implemented Modbus TCP communication to read PLC Holding Registers and process the data for centralized dashboard monitoring."
       },
       {
-        challenge: "Klien membutuhkan revisi konten berulang kali.",
+        challenge: "Monitoring human presence during active testing operations.",
         solution:
-          "Memisahkan konten teks ke dalam struktur data terpisah agar mudah diedit tanpa menyentuh komponen.",
+          "Integrated CCTV streaming with YOLO-based Computer Vision to detect human presence and trigger monitoring alerts.",
       },
     ],
     results: [
-      { label: "Skor Lighthouse", value: "96/100" },
-      { label: "Waktu Muat Halaman", value: "<1.2s" },
-      { label: "Kepuasan Klien", value: "5/5" },
+      { label: "Real-Time Monitoring", value: "Test Passed" },
+      { label: "Integrated Safety Monitoring", value: "Test Passed" },
+      { label: "System Validation", value: "Test Passed" },
     ],
   },
   {

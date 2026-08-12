@@ -22,7 +22,7 @@ export default function ProjectResults({ project }: { project: Project }) {
               key={result.label}
               className="rounded-2xl border border-white/10 bg-base-800/40 p-6 text-center hover:border-accent-500/40 transition-colors"
             >
-              <p className="font-display font-extrabold text-3xl sm:text-4xl bg-gradient-to-r from-accent-400 to-accent-glow bg-clip-text text-transparent">
+              <p className="font-display font-bold text-3xl sm:text-4xl bg-gradient-to-r from-accent-400 to-accent-glow bg-clip-text text-transparent">
                 {result.value}
               </p>
               <p className="mt-2 text-sm text-ink-300">{result.label}</p>
