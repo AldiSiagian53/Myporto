@@ -6,6 +6,22 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import type { Project } from "@/lib/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  async function trackProjectAccess() {
+    try {
+      await fetch("/api/visitor/project-access", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          projectId: project.id,
+        }),
+      });
+    } catch (error) {
+      console.error("Failed to track project access:", error);
+    }
+  }
+
   return (
     <article className="group relative rounded-2xl border border-white/10 bg-base-800/40 overflow-hidden hover:border-accent-500/40 transition-colors">
       {/* Thumbnail */}
@@ -17,6 +33,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+
         <div className="absolute inset-0 bg-gradient-to-t from-base-950/80 via-transparent to-transparent" />
 
         {/* Live demo / GitHub quick links */}
@@ -30,6 +47,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           >
             <ExternalLink className="h-4 w-4" />
           </a>
+
           <a
             href={project.githubUrl}
             target="_blank"
@@ -47,9 +65,11 @@ export default function ProjectCard({ project }: { project: Project }) {
         <span className="font-mono text-[11px] uppercase tracking-wider text-accent-400">
           {project.category}
         </span>
+
         <h3 className="mt-1.5 font-display font-bold text-lg text-ink-100">
           {project.title}
         </h3>
+
         <p className="mt-2 text-sm text-ink-300 leading-relaxed line-clamp-2">
           {project.description}
         </p>
@@ -66,9 +86,10 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        {/* Detail button — links through to the dedicated project detail page */}
+        {/* Detail button */}
         <Link
           href={`/project/${project.id}`}
+          onClick={trackProjectAccess}
           className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent-400 hover:text-accent-glow transition-colors"
         >
           Detail Project

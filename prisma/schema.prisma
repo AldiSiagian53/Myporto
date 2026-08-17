@@ -17,40 +17,38 @@ model User {
 }
 
 model Visitor {
-  id                String          @id @default(cuid())
-  name              String
-  email             String
-  purpose           String
+  id                 String             @id @default(cuid())
+  name               String
+  email              String
+  purpose            String
   verificationStatus VerificationStatus @default(PENDING)
-  ipAddress         String?
-  userAgent         String?
-  createdAt         DateTime        @default(now())
-  updatedAt         DateTime        @updatedAt
-
-  projectAccesses   ProjectAccess[]
-  messages          ContactMessage[]
+  ipAddress          String?
+  userAgent          String?
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  messages           ContactMessage[]
+  projectAccesses    ProjectAccess[]
 
   @@index([email])
   @@index([createdAt])
 }
 
 model Project {
-  id              String          @id @default(cuid())
-  title           String
-  slug            String          @unique
+  id               String          @id @default(cuid())
+  title            String
+  slug             String          @unique
   shortDescription String
-  description     String
-  category        ProjectCategory
-  technologies    Json
-  images          Json?
-  demoUrl         String?
-  githubUrl       String?
-  featured        Boolean         @default(false)
-  published       Boolean         @default(true)
-  createdAt       DateTime        @default(now())
-  updatedAt       DateTime        @updatedAt
-
-  accesses        ProjectAccess[]
+  description      String
+  category         ProjectCategory
+  technologies     Json
+  images           Json?
+  demoUrl          String?
+  githubUrl        String?
+  featured         Boolean         @default(false)
+  published        Boolean         @default(true)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  accesses         ProjectAccess[]
 
   @@index([category])
   @@index([published])
@@ -58,13 +56,12 @@ model Project {
 }
 
 model ProjectAccess {
-  id        String   @id @default(cuid())
-  visitorId String
-  projectId String
+  id         String   @id @default(cuid())
+  visitorId  String
+  projectId  String
   accessedAt DateTime @default(now())
-
-  visitor   Visitor @relation(fields: [visitorId], references: [id], onDelete: Cascade)
-  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  visitor    Visitor  @relation(fields: [visitorId], references: [id], onDelete: Cascade)
 
   @@index([visitorId])
   @@index([projectId])
@@ -81,8 +78,7 @@ model ContactMessage {
   status    MessageStatus @default(NEW)
   createdAt DateTime      @default(now())
   updatedAt DateTime      @updatedAt
-
-  visitor   Visitor? @relation(fields: [visitorId], references: [id], onDelete: SetNull)
+  visitor   Visitor?      @relation(fields: [visitorId], references: [id])
 
   @@index([email])
   @@index([status])
