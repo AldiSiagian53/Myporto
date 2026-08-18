@@ -25,8 +25,9 @@ const CONTACT_LINKS = [
 ];
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -36,14 +37,37 @@ export default function Contact() {
 
   // Placeholder submit — wire this up to an email API (e.g. Resend, EmailJS) later
   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setStatus("sending");
-    await new Promise((resolve) => setTimeout(resolve, 900));
-    console.log("Pesan terkirim:", form);
-    setStatus("sent");
-    setForm({ name: "", email: "", message: "" });
-    setTimeout(() => setStatus("idle"), 3000);
-  };
+  e.preventDefault();
+  setStatus("sending");
+  setError("");
+
+  const response = await fetch("/api/visitor/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(form),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+  setError(data.error || "Failed to send message.");
+  setStatus("idle");
+  return;
+}
+
+  setStatus("sent");
+
+  setForm({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  setTimeout(() => setStatus("idle"), 3000);
+};
 
   return (
     <section id="contact" className="relative py-24 sm:py-32">
@@ -124,11 +148,31 @@ export default function Contact() {
             </div>
 
             <div>
+  <label
+    htmlFor="subject"
+    className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-ink-500"
+  >
+    Subject
+  </label>
+
+  <input
+    id="subject"
+    name="subject"
+    type="text"
+    required
+    value={form.subject}
+    onChange={handleChange}
+    placeholder="Subject pesan Anda"
+    className="w-full rounded-lg border border-white/10 bg-base-900 px-4 py-2.5 text-sm text-ink-100 placeholder:text-ink-500 focus:border-accent-400 outline-none transition-colors"
+  />
+</div>
+
+            <div>
               <label
                 htmlFor="message"
                 className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-ink-500"
               >
-                massage
+                message
               </label>
               <textarea
                 id="message"
@@ -140,6 +184,11 @@ export default function Contact() {
                 placeholder="Ceritakan tentang proyek atau peluang Anda..."
                 className="w-full resize-none rounded-lg border border-white/10 bg-base-900 px-4 py-2.5 text-sm text-ink-100 placeholder:text-ink-500 focus:border-accent-400 outline-none transition-colors"
               />
+              {error && (
+  <p className="text-sm text-red-400">
+    {error}
+  </p>
+)}
             </div>
 
             <button
