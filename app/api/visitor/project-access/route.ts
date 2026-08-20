@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { projectId } = body;
+    const { projectId } = body;                     
 
     if (!projectId || typeof projectId !== "string") {
       return NextResponse.json(
